@@ -1,0 +1,82 @@
+// Global styling for this template
+
+body {
+  @include body-font;
+  padding-top: 140px;
+  color: $secondaryFont;
+  text-rendering: optimizeLegibility;
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: $sidebar-base-width;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $gray-800;
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  @include heading-font;
+  font-size: 1.35rem;
+}
+
+.list-social-icons {
+  a {
+    color: $gray-700;
+    &:hover {
+      color: $primaryTheme;
+    }
+    .fa-lg {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+.list-icons {
+  font-size: 3rem;
+  .list-inline-item i {
+    &:hover {
+      color: $primaryTheme;
+    }
+  }
+}
+
+.whiteText{
+  color: $white !important;
+}
+
+.greyText{
+  color: $gray-400 !important;
+}
+
+.greyerText{
+  color: $gray-700 !important;
+}
+
+.bigIcons{
+  font-size: 2em;
+  a{
+    padding: .1em;
+  }
+}
