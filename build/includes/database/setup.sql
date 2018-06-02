@@ -11,7 +11,6 @@
 CREATE DATABASE IF NOT EXISTS Resume;
 USE Resume;
 
-
 -- -----------------------------------------------------
 -- table for Experiances with Required columns
 -- -----------------------------------------------------
@@ -22,7 +21,6 @@ CREATE TABLE IF NOT EXISTS Resume.Experiences(
  Location VARCHAR(255) NOT NULL,
  Task_1 VARCHAR(255) NOT NULL,
  Task_2 VARCHAR(255),
- Task_3 VARCHAR(255),
  Task_3 VARCHAR(255),
  Project_1 VARCHAR(255),
  Project_1_Link VARCHAR(255),
@@ -35,3 +33,40 @@ CREATE TABLE IF NOT EXISTS Resume.Experiences(
  Datestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
  Modified_Datastamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
  PRIMARY KEY (id));
+
+ -- -----------------------------------------------------
+ -- table for Experiances with Required columns
+ -- -----------------------------------------------------
+ CREATE TABLE IF NOT EXISTS Resume.Education(
+  ID INT NOT NULL AUTO_INCREMENT,
+  Institution VARCHAR(255) NOT NULL,
+  Location VARCHAR(255) NOT NULL,
+  Courses VARCHAR(255) NOT NULL,
+  Details VARCHAR(255),
+  TimeStart VARCHAR(255) NOT NULL,
+  TimeEnd VARCHAR(255) NOT NULL,
+  Datestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  Modified_Datastamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (id));
+
+  -- -----------------------------------------------------
+  -- table for Skills with Required columns
+  -- -----------------------------------------------------
+  CREATE TABLE IF NOT EXISTS Resume.Skills(
+   ID INT NOT NULL AUTO_INCREMENT,
+   Name VARCHAR(255) NOT NULL,
+   Percentage VARCHAR(255) NOT NULL,
+   Datestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+   Modified_Datastamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+   PRIMARY KEY (id));
+
+   -- -----------------------------------------------------
+   -- table for Softwares with Required columns
+   -- -----------------------------------------------------
+   CREATE TABLE IF NOT EXISTS Resume.Softwares(
+    ID INT NOT NULL AUTO_INCREMENT,
+    Name VARCHAR(255) NOT NULL,
+    Percentage VARCHAR(255) NOT NULL,
+    Datestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    Modified_Datastamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (id));

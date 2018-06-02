@@ -286,8 +286,8 @@ $GLOBALS['title'] = 'Home: Ajmain Naqib';
                 <div class="margin-top-40">       <!--Professional Experiences -->
                   <div class="tt-heading">
                     <div class="tt-heading-inner">
-                      <h1 class="tt-heading-title">Professional Experiences</h1>
-                      <div class="tt-heading-subtitle">Places I have worked</div>
+                      <h1 class="tt-heading-title">Highlighted Experiences</h1>
+                      <div class="tt-heading-subtitle">A few of my jobs</div>
                       <hr class="hr-short">
                     </div> <!-- /.tt-heading-inner -->
                   </div>
@@ -317,7 +317,7 @@ $GLOBALS['title'] = 'Home: Ajmain Naqib';
                     <div class="panel panel-default experience">
                       <div class="panel-heading" role="tab" id="heading6">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6" class="collapsed">
-                          <p class="date">(Aug 2017 - Present)</p>
+                          <p class="date">Aug 2017 - Present</p>
                           <p class="job"><strong>FPsc Genetics</strong>,University of Wisconsin-Madison, WI<br>
                             <i>Web Developer</i>
                           </p>
@@ -337,7 +337,7 @@ $GLOBALS['title'] = 'Home: Ajmain Naqib';
                     <div class="panel panel-default experience">
                       <div class="panel-heading" role="tab" id="heading7">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7" class="collapsed">
-                          <p class="date">(2015 - 2017)</p>
+                          <p class="date">2015 - 2017</p>
                           <p class="job"><strong>Picturesque Studio	</strong>, Queens, NY<br>
                             <i>Co-Founder</i> </p>
                           <p class="arrow-down css3Animate"><span aria-hidden="true" data-icon="3"></span></p>
